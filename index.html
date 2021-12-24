@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>giáng sinh zui zẻ</title>
+    <link rel="icon" href="./assets/img/icon/icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+    
+</head>
+<body>
+
+    
+    <!-- <div id="bg"></div> -->
+    <div id="particles-js"></div>
+    <!-- partial -->
+    <script src='https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js'></script>
+    <script  src="./assets/script/script.js"></script>
+    
+    
+    <div class="main">
+        
+        <div class="header">
+            <h2 id="title">đố biết ai đây nè </h2>
+            
+        </div>
+        
+        <div class="content">
+            <div class="img1">
+                <div class="l-img-items"><img src="/assets/img/lincute/img6.jpg" alt="" class="l-img"></div>
+                <div class="l-img-items"><img src="/assets/img/lincute/img3.jpg" alt="" class="l-img"></div>
+                <div class="l-img-items"><img src="/assets/img/lincute/img1.jpg" alt="" class="l-img"></div>
+                <div class="l-img-items"><img src="/assets/img/lincute/img2.jpg" alt="" class="l-img"></div>
+                <div class="l-img-items"><img src="/assets/img/lincute/img4.jpg" alt="" class="l-img"></div>
+                <div class="l-img-items"><img src="/assets/img/lincute/img5.jpg" alt="" class="l-img"></div>
+    
+            </div>
+            <div class="img2">
+                <div class="l-img-items"><img src="/assets/img/lincute/img8.jpg" alt="" class="l-img"></div>
+                <div class="l-img-items"><img src="/assets/img/lincute/img9.jpg" alt="" class="l-img"></div>
+                <div class="l-img-items"><img src="/assets/img/lincute/img7.jpg" alt="" class="l-img"></div>
+            </div>
+            
+        </div>
+
+        
+        <div class="footer">
+            <h2 class="footer-content">Ai xịn thế nhể </h2>
+
+            <div class="l-btn js-btn">
+                <button class="btn"> Bất ngờ đây nè:v</button>
+            </div>
+        </div> 
+    </div>
+    
+
+    <div class="back-drop">
+        <div class="b">
+            <div class="b-header">
+                <img src="./assets/img/capoo/capoo1.gif" alt="" class="b-header-img">
+                <div class="b-header-title">hế nhô bạn iu nè</div>
+            </div>
+    
+            <p class="b-content">có bất ngờ dành cho e nè</p>
+            <p class="b-content">xem luôn nhớ</p>
+            <div class="b-btn">
+                <button onclick="playAu()" class="btn">okiiiii, lên nhạc:v</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="linlin">
+        <div class="l">
+            <div class="l-header">
+                <img src="./assets/img/hb/christmas1.gif" alt="" class="l-header-img">
+                <div class="l-header-title">giáng sinh zui zẻ nè </div>
+            </div>
+
+            <p class="l-content">25/12/2021, giáng sinh òi nè:v</p>
+            <p class="l-content">giáng sinh zui zẻ nhó</p>
+            <p class="l-content">hong có quà đâu, cho a nợ nhớ:v</p>
+            <p class="l-content">nợ hơi nhìu lấy thân trả nè:")))</p>
+            <div class="b-btn">
+                <button class="btn"> <a id="bam" href="#">còn gì đây nè</a></button>
+            </div>
+
+        </div>
+    </div>
+
+   
+    
+    <script>
+        const backDrop = document.querySelector('.back-drop')
+        const main = document.querySelector('.main')
+        const linlinBtn = document.querySelector('.js-btn')
+        const linlin = document.querySelector('.linlin')
+
+        const music = new Audio('./assets/audio/tick.mp3');
+        music.loop =true;
+
+        function hideB() {
+            backDrop.classList.add('hide')
+            main.classList.add('open')
+            music.play();
+        }
+
+        function showL() {
+            main.classList.remove('open')
+            linlin.classList.add('open')
+        }
+
+        // backDrop.addEventListener('online',music.play())
+
+        backDrop.addEventListener('click',hideB)
+        linlinBtn.addEventListener('click',showL)
+    </script>
+
+    
+    
+</body>
+</html>

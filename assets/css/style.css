@@ -1,0 +1,344 @@
+/* Reset CSS */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: .8;
+    height: 100vh;
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-image: url(/assets/img/bg/bg.jpg);
+    background-size: cover;
+    background-position: 50%;
+    -webkit-filter: blur(4px);
+}
+
+/* main css */
+.main {
+    position: relative;
+    /* display: flex; */
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    display: none;
+}
+
+.main.open {
+    display: flex !important;
+}
+
+
+
+.header {
+    
+}
+
+.header h2{
+    font-family: 'Pacifico';
+    font-size: 80px;
+    text-align: center;
+    /* margin-bottom: 30px; */
+    position: fixed;
+    color: #fff;
+    width: 100%;
+    text-shadow: 0 0 3px black;
+    z-index: 3;
+    top: 0;
+}
+
+
+.content {
+    display: flex;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    margin: 16px 32px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.content .img1 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.content .img2 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+
+}
+
+.content .l-img-items {
+    /* padding-top: 50%; */
+    margin: 16px 16px;
+    
+}
+
+.content .l-img-items .l-img {
+    width: 200px;
+}
+
+
+
+
+.footer {
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    bottom: 8px;
+}
+
+.footer h2 {
+    font-family: 'Pacifico';
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 8px;
+    color: #fff;
+    width: 100%;
+    text-shadow: 0 0 3px black;
+    z-index: 3;
+
+}
+
+/* b css */
+.back-drop {
+    display: flex;
+
+    position: fixed;
+    z-index: 1060;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: .625em;
+    overflow-x: hidden;
+    transition: background-color .1s;
+} 
+
+.b {
+    display: flex;
+    position: relative;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: center;
+    width: 32em;
+    max-width: 100%;
+    padding: 1.25em;
+    border: none;
+    border-radius: 1.3125em;
+    background: #fff;
+    font-family: inherit;
+    font-size: 1rem;
+    background-image: linear-gradient(#636162, #171819); 
+}
+
+
+.b-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 1.8em;
+}
+.b-header-img {
+    max-width: 100%;
+    margin: 1.25em auto;
+    
+}
+.b-header-title {
+    position: relative;
+    max-width: 100%;
+    margin: 0 0 .4em;
+    padding: 0;
+    color: #595959;
+    font-size: 1.875em;
+    font-weight: 600;
+    text-align: center;
+    text-transform: none;
+    word-wrap: break-word;
+    margin-top: 16px;
+    color: #e5e5e5;
+    text-shadow: 0 0 2px #000;
+
+}
+
+.b-content {
+    z-index: 1;
+    justify-content: center;
+    margin: 0;
+    padding: 0 1.6em;
+    color: #545454;
+    font-size: 1.125em;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    word-wrap: break-word;
+    color: #fff;
+    line-height: 1.4;
+    text-shadow: 0 0 1px #000;
+
+}
+
+.b-btn {
+    display: flex;
+    z-index: 1;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 1.25em auto 0;
+}
+
+.btn {
+    border: 0;
+    border-radius: .75em;
+    background: initial;
+    background-color: #3085d6;
+    color: #fff;
+    font-size: 1.0625em;
+    padding: 13px 31px;
+    font-weight: 600;
+}
+
+.btn:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.back-drop.hide {
+    display: none !important;
+}
+
+/* l css */
+.linlin {
+    display: none;
+          
+    position: fixed;
+    z-index: 1060;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: .625em;
+    overflow-x: hidden;
+    transition: background-color .1s;
+} 
+
+.linlin.open {
+    display: flex !important;
+}
+
+.l {
+    /* display: flex; */
+    /* position: relative; */
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: center;
+    width: 32em;
+    max-width: 100%;
+    padding: 1.25em;
+    border: none;
+    border-radius: 1.3125em;
+    background: #fff;
+    font-family: inherit;
+    font-size: 1rem;
+    background-image: linear-gradient(to top,#636162, #171819); 
+}
+
+
+.l-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 1.8em;
+}
+.l-header-img {
+    max-width: 100%;
+    margin: 1.25em auto;
+    
+}
+.l-header-title {
+    position: relative;
+    max-width: 100%;
+    margin: 0 0 .4em;
+    padding: 0;
+    color: #595959;
+    font-size: 1.875em;
+    font-weight: 600;
+    text-align: center;
+    text-transform: none;
+    word-wrap: break-word;
+    margin-top: 16px;
+    color: #e5e5e5;
+    text-shadow: 0 0 1px #000;
+}
+
+.l-content {
+    z-index: 1;
+    justify-content: center;
+    margin: 0;
+    padding: 0 1.6em;
+    color: #545454;
+    font-size: 1.125em;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    word-wrap: break-word;
+    color: #fff;
+    line-height: 1.4;
+    text-shadow: 0 0 1px #000;
+    line-height: 30px;
+}
+
+.linlin #bam {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* responsive */
+@media only screen and (max-width: 500px){
+    .footer h2,
+    .header h2 {
+        font-family: 'Pacifico';
+        font-size: 45px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+}
+
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(117, 114, 113, 0.8) 10%, rgba(40, 49, 77, 0.8) 30%, rgba(29, 35, 71, 0.8) 50%, rgba(19, 25, 28, 0.8) 80%, rgba(15, 14, 14, .8) 100%), url(https://38.media.tumblr.com/tumblr_m00c3czJkM1qbukryo1_500.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+  }
